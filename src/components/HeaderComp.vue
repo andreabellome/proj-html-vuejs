@@ -1,5 +1,7 @@
 <template>
     <div class="debug padd-10">
+
+        <!-- start: nav bar -->
         <div class="debug padd-10 width-75 margin-auto flex flex-dir-row just-cont-between bg-yellow">
 
             <!-- start: logo -->
@@ -25,6 +27,10 @@
             <!-- end: icons -->
 
         </div>
+        <!-- end: nav bar -->
+
+
+
     </div>
 </template>
 
