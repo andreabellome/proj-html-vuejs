@@ -32,10 +32,7 @@
 <script>
 export default {
     name: 'FooterComp',
-    props: ['datiFooter'],
-    setup() {
-        return {}
-    }
+    props: ['datiFooter']
 }
 </script>
 
