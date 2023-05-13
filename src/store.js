@@ -2,6 +2,18 @@ import { reactive } from "vue";
 
 export const store = reactive(
     {
+
+        /* start: object with header info */
+        headerObj: [
+            { id: 'Home' },
+            { id: 'Courses' },
+            { id: 'Instructors' },
+            { id: 'Events' },
+            { id: 'Pages' },
+            { id: 'Elements' }
+        ],
+        /* end: object with header info */
+
         /* start: object with footer info */
         footerObj: [
             {

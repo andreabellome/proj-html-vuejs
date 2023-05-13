@@ -40,6 +40,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container-footer {
+    padding: 10px;
+    background-color: #222222;
+}
+
 .footer-style {
     width: 75%;
     margin: auto;
@@ -63,10 +68,7 @@ export default {
     color: #FFFFFF;
 }
 
-.container-footer {
-    padding: 10px;
-    background-color: #222222;
-}
+
 
 ul {
     list-style-type: none;

@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-  <HeaderComp />
+  <HeaderComp :datiHeader="store.headerObj" />
   <FooterComp :datiFooter="store.footerObj" />
 </template>
 
