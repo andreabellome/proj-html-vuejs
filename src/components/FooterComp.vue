@@ -1,6 +1,6 @@
 <template>
-    <div class="debug padd-10 container-footer">
-        <div class="debug footer-style padd-10">
+    <div class="debug container-footer">
+        <div class="debug footer-style">
 
             <!-- start: dynamic footer div -->
             <div v-for="(elem, index) in datiFooter" :key="index" class="debug footer-card">
@@ -43,6 +43,8 @@ export default {
 .footer-style {
     width: 75%;
     margin: auto;
+
+    padding: 10px;
 
     color: #FFFFFF;
 
