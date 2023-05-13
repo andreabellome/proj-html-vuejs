@@ -1,12 +1,12 @@
 <script>
 import axios from 'axios';
 import { store } from './store';
-import Component from './components/Component.vue';
+import FooterComp from './components/FooterComp.vue';
 
 export default {
   name: "App",
   components: {
-    Component
+    FooterComp
   },
   data() {
     return {
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <Component />
+  <FooterComp />
 </template>
 
 <style lang="scss">
