@@ -2,57 +2,28 @@
     <div class="debug padd-10 container-footer">
         <div class="debug footer-style padd-10">
 
-            <!-- start: iAcademy -->
-            <div class="debug footer-card">
-                <h5 class="text-bold col-white">
-                    iAcademy
-                </h5>
-                <span class="col-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui molestiae itaque eius consectetur quia
-                    modi fugit totam dolores ipsum, doloremque sunt iste! Qui reprehenderit provident quibusdam pariatur!
-                    Reiciendis, magni iste!
-                </span>
-            </div>
-            <!-- end: iAcademy -->
+            <!-- start: dynamic footer div -->
+            <div v-for="(elem, index) in datiFooter" :key="index" class="debug footer-card">
+                <h4 class="text-bold col-white mb-4">
+                    {{ elem.id }}
+                </h4>
+                <ul>
+                    <li v-if="index + 1 < datiFooter.length" v-for="(elem2, index2) in elem.li" :key="index2"
+                        class="text-col-foot mb-3">
+                        <span class="text-col-foot font-size-17">
+                            {{ elem2.course }}
+                        </span> <br>
+                        <span class="text-col-foot font-size-14">
+                            {{ elem2.teacher }}
+                        </span>
+                    </li>
+                    <li v-else>
+                        <img src="../assets/footer-img-1.png" alt="footer-img-1" class="img-fluid">
+                    </li>
+                </ul>
 
-            <!-- start: popular courses -->
-            <div class="debug footer-card">
-                <h5 class="text-bold col-white">
-                    Popular Courses
-                </h5>
-                <span class="col-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui molestiae itaque eius consectetur quia
-                    modi fugit totam dolores ipsum, doloremque sunt iste! Qui reprehenderit provident quibusdam pariatur!
-                    Reiciendis, magni iste!
-                </span>
             </div>
-            <!-- end: popular courses -->
-
-            <!-- start: support -->
-            <div class="debug footer-card">
-                <h5 class="text-bold col-white">
-                    Support
-                </h5>
-                <span class="col-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui molestiae itaque eius consectetur quia
-                    modi fugit totam dolores ipsum, doloremque sunt iste! Qui reprehenderit provident quibusdam pariatur!
-                    Reiciendis, magni iste!
-                </span>
-            </div>
-            <!-- end: support -->
-
-            <!-- start: flexible learning -->
-            <div class="debug footer-card">
-                <h5 class="text-bold col-white">
-                    Flexible Learning
-                </h5>
-                <span class="col-white">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui molestiae itaque eius consectetur quia
-                    modi fugit totam dolores ipsum, doloremque sunt iste! Qui reprehenderit provident quibusdam pariatur!
-                    Reiciendis, magni iste!
-                </span>
-            </div>
-            <!-- end: flexible learning -->
+            <!-- end: dynamic footer div -->
 
         </div>
     </div>
@@ -61,6 +32,7 @@
 <script>
 export default {
     name: 'FooterComp',
+    props: ['datiFooter'],
     setup() {
         return {}
     }
@@ -69,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer-style {
-    width: 80%;
+    width: 75%;
     margin: auto;
 
     color: #FFFFFF;
@@ -80,6 +52,10 @@ export default {
 
 }
 
+.text-col-foot {
+    color: #B9B9B9;
+}
+
 .footer-card {
     width: calc(100% / 4 - 1%);
     color: #FFFFFF;
@@ -88,5 +64,11 @@ export default {
 .container-footer {
     padding: 10px;
     background-color: #222222;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 </style>

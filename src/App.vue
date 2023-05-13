@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <FooterComp />
+  <FooterComp :datiFooter="store.footerObj" />
 </template>
 
 <style lang="scss">
