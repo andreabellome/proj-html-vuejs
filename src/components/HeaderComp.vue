@@ -2,7 +2,7 @@
     <div class="debug padd-10">
 
         <!-- start: header -->
-        <div class="debug padd-10 width-75 margin-auto ">
+        <div class="debug header-style padd-10 width-75 margin-auto">
 
             <!-- nav bar -->
             <NavBarComp :datiNav="datiHeader" />
@@ -30,4 +30,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header-style {
+    padding: 10px;
+
+}
+</style>
