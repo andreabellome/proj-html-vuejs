@@ -1,17 +1,17 @@
 <template>
     <!-- start: nav bar -->
-    <div class="debug flex flex-dir-row just-cont-between bg-yellow">
+    <div class="flex flex-dir-row just-cont-between mb-3">
 
         <!-- start: logo -->
-        <div class="debug logo">
-            <img src="../assets/logo-light.png" alt="logo-light" class="debug margin-auto img-fluid">
+        <div class="logo">
+            <img src="../assets/logo-light.png" alt="logo-light" class="margin-auto img-fluid">
         </div>
         <!-- end: logo -->
 
         <!-- start: dyanmic header with info from store -->
-        <div class="debug flex align-it-center">
+        <div class="flex align-it-center text-bold">
             <ul>
-                <li v-for="(elem, index) in datiNav">
+                <li v-for="(elem, index) in datiNav" class="col-white">
                     {{ elem.id }}
                 </li>
             </ul>
@@ -19,8 +19,10 @@
         <!-- end: dyanmic header with info from store -->
 
         <!-- start: icons -->
-        <div class="debug flex align-it-center">
-            chicco
+        <div class="flex align-it-center">
+            <i class="fa-solid fa-magnifying-glass col-white mr-30"></i>
+            <i class="fa-solid fa-bag-shopping col-white mr-30"></i>
+            <i class="fa-solid fa-bars col-white"></i>
         </div>
         <!-- end: icons -->
 

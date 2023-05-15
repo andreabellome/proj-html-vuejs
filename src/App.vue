@@ -2,12 +2,14 @@
 import axios from 'axios';
 import { store } from './store';
 import FooterComp from './components/FooterComp.vue';
+import MainComp from './components/MainComp.vue';
 import HeaderComp from './components/HeaderComp.vue';
 
 export default {
   name: "App",
   components: {
     HeaderComp,
+    MainComp,
     FooterComp
   },
   data() {
@@ -21,6 +23,7 @@ export default {
 
 <template>
   <HeaderComp :datiHeader="store.headerObj" />
+  <MainComp />
   <FooterComp :datiFooter="store.footerObj" />
 </template>
 

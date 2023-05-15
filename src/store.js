@@ -21,54 +21,78 @@ export const store = reactive(
                 li: [
                     {
                         course: 'Providing Life Changing Experiences Through Education. Class That Fit Your Busy Life. Closer to Home',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     }
                 ],
+                tel: '1-677-124-442277',
+                hours: 'Mon. - Sat. 8.00 - 18.00',
             },
             {
                 id: 'Popular Courses',
                 li: [
                     {
                         course: 'Business English',
-                        teacher: 'Preston Marshall'
+                        teacher: 'Preston Marshall',
+                        pathimg: ''
                     },
                     {
                         course: 'Social Computing',
-                        teacher: 'David Sanders'
+                        teacher: 'David Sanders',
+                        pathimg: ''
                     },
                     {
                         course: 'Learn Spanish',
-                        teacher: 'Jennie King'
+                        teacher: 'Jennie King',
+                        pathimg: ''
                     }
-                ]
+                ],
+                tel: '',
+                hours: '',
             },
             {
                 id: 'Support',
                 li: [
                     {
                         course: 'User Dashboard',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     },
                     {
                         course: 'Contact Us',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     },
                     {
                         course: 'FAQ',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     },
                     {
                         course: 'Course Offer',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     },
                     {
                         course: 'Events',
-                        teacher: ''
+                        teacher: '',
+                        pathimg: ''
                     },
-                ]
+                ],
+                tel: '',
+                hours: '',
             },
             {
-                id: 'Flexible Learning'
+                id: 'Flexible Learning',
+                li: [
+                    {
+                        course: '',
+                        teacher: '',
+                        pathimg: '../assets/footer-img-1.png'
+                    },
+                ],
+                tel: '',
+                hours: '',
             }
         ]
         /* end: object with footer info */
