@@ -110,7 +110,6 @@ export const store = reactive(
 
         carouselSecondObjMain: [
 
-
             {
                 title: 'Android Developer',
                 teacher: 'Mario Rossi',

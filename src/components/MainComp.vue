@@ -132,54 +132,66 @@
                 <!-- start: div with 3 cards -->
                 <div class="debug mb-3 flex flex-dir-row width-100p100 just-cont-evenly flex-wrap">
 
-
                     <!-- start: card -->
-                    <div v-for="(ELEMCARD, IDXCARD) in secondCarObj" class="card" style="width: 18rem;">
+                    <div v-for="(ELEMCARD, IDXCARD) in secondCarObj.slice(curractivesec * 3, curractivesec * 3 + 3)"
+                        class="card" style="width: 18rem;">
 
-                        <img :src="ELEMCARD.imgpath" class="card-img-top" :alt="ELEMCARD.title">
+                        <div class="debug">
 
-                        <div class="card-body">
-                            <div class="debug flex flex-dir-row just-cont-between mb-3">
-                                <div class="debug">
-                                    <h5 class="card-title">
-                                        {{ ELEMCARD.title }}
-                                    </h5>
-                                    <span>
-                                        {{ ELEMCARD.teacher }}
-                                    </span>
+
+                            <img :src="ELEMCARD.imgpath" class="card-img-top" :alt="ELEMCARD.title">
+
+                            <div class="card-body">
+                                <div class="debug flex flex-dir-row just-cont-between mb-3">
+                                    <div class="debug">
+                                        <h5 class="card-title">
+                                            {{ ELEMCARD.title }}
+                                        </h5>
+                                        <span>
+                                            {{ ELEMCARD.teacher }}
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <span v-if="ELEMCARD.price === 'FREE'"
+                                            class="badge rounded-pill text-bg-primary debug" style="display: inline-block;">
+                                            {{ ELEMCARD.price }}
+                                        </span>
+
+                                        <span v-else class="badge rounded-pill text-bg-warning debug"
+                                            style="display: inline-block;">
+                                            &#36 {{ ELEMCARD.price }}
+                                        </span>
+                                    </div>
+
                                 </div>
 
-                                <div>
-                                    <span class="badge rounded-pill text-bg-primary debug" style="display: inline-block;">
-                                        &#36 {{ ELEMCARD.price }}
-                                    </span>
+                                <p class="card-text">
+                                    {{ ELEMCARD.content }}
+                                </p>
+
+                                <div class="debug flex flex-dir-row just-cont-evenly">
+                                    <div class="debug">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span>
+                                            {{ ELEMCARD.students }}
+                                        </span>
+                                    </div>
+
+                                    <div class="debug">
+                                        <i class="fa-solid fa-tag"></i>
+                                        <span class="text-uppercase">
+                                            {{ ELEMCARD.type }}
+                                        </span>
+                                    </div>
                                 </div>
+
+
 
                             </div>
-
-                            <p class="card-text">
-                                {{ ELEMCARD.content }}
-                            </p>
-
-                            <div class="debug flex flex-dir-row just-cont-evenly">
-                                <div class="debug">
-                                    <i class="fa-solid fa-user"></i>
-                                    <span>
-                                        {{ ELEMCARD.students }}
-                                    </span>
-                                </div>
-
-                                <div class="debug">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <span class="text-uppercase">
-                                        {{ ELEMCARD.type }}
-                                    </span>
-                                </div>
-                            </div>
-
-
-
                         </div>
+
+
                     </div>
                     <!-- end: card -->
 
@@ -188,9 +200,11 @@
                 <!-- end: div with 3 cards -->
 
                 <div class="debug width-20 flex flex-dir-row just-cont-evenly">
-                    <i v-for="(elem, index) in daticarousel" class="fa-solid"
-                        v-bind:class="[index == curractive ? 'fa-circle-dot' : 'fa-circle']"
-                        @click="updateCurrActive(index)"></i>
+                    <i v-for="IDXCARDI in secondCarObj.length / 3" class="fa-solid"
+                        v-bind:class="[IDXCARDI - 1 == curractivesec ? 'fa-circle-dot' : 'fa-circle']"
+                        @click="updateCurrActiveSecond(IDXCARDI - 1)">
+                        {{ IDXCARDI - 1 }}
+                    </i>
                 </div>
 
             </div>
@@ -218,20 +232,26 @@
 <script>
 export default {
     name: 'MainComp',
-    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos', 'secondCarObj'],
+    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos', 'secondCarObj', 'currActiveSecond'],
     data() {
         return {
             curractive: this.currActiveCar,
-            daticarousel: this.carouselInfo
+            daticarousel: this.carouselInfo,
+            curractivesec: this.currActiveSecond
         }
     },
     methods: {
         updateCurrActive(index) {
-
             if (index != this.curractive) {
                 this.curractive = index
             }
+        },
 
+        updateCurrActiveSecond(IDXCARDI) {
+            if (IDXCARDI != this.curractivesec) {
+                this.curractivesec = IDXCARDI
+                console.log(this.curractivesec)
+            }
         }
     }
 }
