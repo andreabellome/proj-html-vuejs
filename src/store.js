@@ -32,6 +32,36 @@ export const store = reactive(
             }
         ],
         /* end: carousel info */
+        firstDivObj: [
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-1.png'
+            },
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-2.png'
+            },
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-3.png'
+            },
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-4.png'
+            },
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-5.png'
+            },
+            {
+                title: 'Languages',
+                imgpath: '../src/assets/h5-custom-icon-6.png'
+            },
+
+        ],
+        /* start: main info */
+
+        /* end: main info */
 
         /* start: object with footer info */
         footerObj: [
