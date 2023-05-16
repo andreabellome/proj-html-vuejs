@@ -32,6 +32,8 @@ export const store = reactive(
             }
         ],
         /* end: carousel info */
+
+        /* start: main info */
         firstDivObj: [
             {
                 title: 'Languages',
@@ -59,7 +61,50 @@ export const store = reactive(
             },
 
         ],
-        /* start: main info */
+
+        currActiveCarMain: 1,
+
+        carouselObjMain: [
+            {
+                name: 'Joan Collins',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+                imgpath: '../src/assets/testimonials-standard-3.png'
+
+            },
+            {
+                name: 'Maria Rossi',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+                imgpath: '../src/assets/testimonials-standard-1.png'
+
+            },
+            {
+                name: 'Elena Rossi',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+                imgpath: '../src/assets/testimonials-standard-2.png'
+
+            },
+
+        ],
+
+        clientlogos: [
+            {
+                imgalt: 'h5-client-1',
+                imgpath: '../src/assets/h5-client-1.png',
+            },
+            {
+                imgalt: 'h5-client-2',
+                imgpath: '../src/assets/h5-client-2.png',
+            },
+            {
+                imgalt: 'h5-client-3',
+                imgpath: '../src/assets/h5-client-3.png',
+            },
+            {
+                imgalt: 'h5-client-4',
+                imgpath: '../src/assets/h5-client-4.png',
+            }
+
+        ],
 
         /* end: main info */
 

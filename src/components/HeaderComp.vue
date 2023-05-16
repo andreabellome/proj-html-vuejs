@@ -1,5 +1,5 @@
 <template>
-    <div class="debug padd-10 bg-header">
+    <div class="debug bg-header" style="padding-top: 10px; padding-bottom: 10px;">
 
         <!-- start: header -->
         <div class="debug header-style padd-10 width-75 margin-auto">

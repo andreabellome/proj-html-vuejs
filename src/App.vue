@@ -22,8 +22,14 @@ export default {
 </script>
 
 <template>
+  <!-- header -->
   <HeaderComp :datiHeader="store.headerObj" :datiCarousel="store.carouselObj" :currActive="store.currActive" />
-  <MainComp :datiFirstDiv="store.firstDivObj" />
+
+  <!-- main -->
+  <MainComp :datiFirstDiv="store.firstDivObj" :carouselInfo="store.carouselObjMain"
+    :currActiveCar="store.currActiveCarMain" :clientLogos="store.clientlogos" />
+
+  <!-- footer -->
   <FooterComp :datiFooter="store.footerObj" />
 </template>
 

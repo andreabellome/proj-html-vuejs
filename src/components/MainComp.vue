@@ -1,5 +1,5 @@
 <template>
-    <div class="debug padd-10">
+    <div class="debug" style="padding-top: 10px; padding-bottom: 10px;">
 
         <!-- start: main container first div -->
         <div class="debug default-div mb-3">
@@ -84,10 +84,50 @@
         <!-- end: third div -->
 
         <!-- start: div with carousel -->
-        <div class="debug ">
-            carousel here
+        <div class="debug mb-3 bg-image-carousel flex align-it-center" style="min-height: 500px;">
+            <div class="debug default-div flex flex-dir-col align-it-center just-cont-center">
+
+                <div class="debug mb-3">
+                    <img :src="daticarousel[curractive].imgpath" :alt="daticarousel[curractive].name">
+                </div>
+
+                <div class="debug mb-3 col-white width-65 text-center font-size-18">
+                    {{ daticarousel[curractive].text }}
+                </div>
+
+                <div class="debug text-center mb-3">
+                    <p class="font-size-25 col-white text-bold">
+                        {{ daticarousel[curractive].name }}
+                    </p>
+                    <span class="text-uppercase col-white">
+                        student
+                    </span>
+                </div>
+
+                <div class="debug width-20 flex flex-dir-row just-cont-evenly">
+                    <i v-for="(elem, index) in daticarousel" class="fa-regular col-white"
+                        v-bind:class="[index == curractive ? 'fa-circle-dot' : 'fa-circle']"
+                        @click="updateCurrActive(index)"></i>
+                </div>
+
+
+            </div>
         </div>
         <!-- end: div with carousel -->
+
+
+        <!-- start: client logos -->
+        <div class="debug">
+            <div class="debug default-div flex flex-dir-row just-cont-evenly align-it-center">
+
+                <div v-for="(elemlogo, idxlogo) in clientLogos" class="">
+                    <img :src="elemlogo.imgpath" :alt="elemlogo.imgpath">
+                </div>
+
+            </div>
+        </div>
+        <!-- end: client logos -->
+
 
     </div>
 </template>
@@ -95,10 +135,21 @@
 <script>
 export default {
     name: 'MainComp',
-    props: ['datiFirstDiv'],
-    setup() {
+    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos'],
+    data() {
+        return {
+            curractive: this.currActiveCar,
+            daticarousel: this.carouselInfo
+        }
+    },
+    methods: {
+        updateCurrActive(index) {
 
-        return {}
+            if (index != this.curractive) {
+                this.curractive = index
+            }
+
+        }
     }
 }
 </script>
@@ -108,6 +159,13 @@ export default {
     background-image: url(../assets/h1-img-8.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center center;
+}
+
+.bg-image-carousel {
+    background-image: url(../assets/h5-parallax-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
 }
 
