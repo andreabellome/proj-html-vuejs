@@ -27,7 +27,8 @@ export default {
 
   <!-- main -->
   <MainComp :datiFirstDiv="store.firstDivObj" :carouselInfo="store.carouselObjMain"
-    :currActiveCar="store.currActiveCarMain" :clientLogos="store.clientlogos" />
+    :currActiveCar="store.currActiveCarMain" :clientLogos="store.clientlogos"
+    :secondCarObj="store.carouselSecondObjMain" />
 
   <!-- footer -->
   <FooterComp :datiFooter="store.footerObj" />

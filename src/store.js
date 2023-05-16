@@ -106,6 +106,104 @@ export const store = reactive(
 
         ],
 
+        currActiveSecondCarMain: 1,
+
+        carouselSecondObjMain: [
+
+
+            {
+                title: 'Android Developer',
+                teacher: 'Mario Rossi',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '1',
+                price: 'FREE',
+                imgpath: '../src/assets/course-1-f-img.jpg'
+            },
+            {
+                title: 'Web Designing',
+                teacher: 'Giovanni Francesco',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'Business',
+                students: '20',
+                price: 'FREE',
+                imgpath: '../src/assets/course-2-f-img.jpg'
+            },
+            {
+                title: 'Financial Modelling',
+                teacher: 'Elena Ciao',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'General',
+                students: '3',
+                price: '20',
+                imgpath: '../src/assets/course-3-f-img.jpg'
+            },
+
+
+
+
+            {
+                title: 'Android Developer',
+                teacher: 'Mario Rossi',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '1',
+                price: 'FREE',
+                imgpath: '../src/assets/course-4-f-img.jpg'
+            },
+            {
+                title: 'Web Designing',
+                teacher: 'Giovanni Francesco',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '20',
+                price: 'FREE',
+                imgpath: '../src/assets/course-5-f-img.jpg'
+            },
+            {
+                title: 'Financial Modelling',
+                teacher: 'Elena Ciao',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '3',
+                price: '20',
+                imgpath: '../src/assets/course-6-f-img.jpg'
+            },
+
+
+
+
+            {
+                title: 'Android Developer',
+                teacher: 'Mario Rossi',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '1',
+                price: 'FREE',
+                imgpath: '../src/assets/course-7-f-img.jpg'
+            },
+            {
+                title: 'Web Designing',
+                teacher: 'Giovanni Francesco',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '20',
+                price: 'FREE',
+                imgpath: '../src/assets/course-8-f-img.jpg'
+            },
+            {
+                title: 'Financial Modelling',
+                teacher: 'Elena Ciao',
+                content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
+                type: 'programming',
+                students: '3',
+                price: '20',
+                imgpath: '../src/assets/course-9-f-img.jpg'
+            }
+
+
+        ],
+
         /* end: main info */
 
         /* start: object with footer info */

@@ -37,7 +37,7 @@
             </p>
 
             <div class="width-70 margin-auto">
-                <img src="../assets/new-image.png" class="img-fluid">
+                <img src="../assets/h5-img-1.jpg" class="img-fluid">
             </div>
 
         </div>
@@ -110,10 +110,93 @@
                         @click="updateCurrActive(index)"></i>
                 </div>
 
-
             </div>
         </div>
         <!-- end: div with carousel -->
+
+        <!-- start: carousel popular courses -->
+        <div class="debug mb-3 flex align-it-center" style="min-height: 500px;">
+
+            <div class="debug default-div flex flex-dir-col align-it-center just-cont-center">
+
+                <h2 class="text-bold mb-3 font-size-40">
+                    Popular Online Courses
+                </h2>
+
+                <p class="text-center width-70" style="color: #959595;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eaque! Officiis molestiae est eum quo
+                    nam adipisci? Nisi, itaque eius libero, fugit sit suscipit maxime soluta, voluptate accusantium delectus
+                    architecto!
+                </p>
+
+                <!-- start: div with 3 cards -->
+                <div class="debug mb-3 flex flex-dir-row width-100p100 just-cont-evenly flex-wrap">
+
+
+                    <!-- start: card -->
+                    <div v-for="(ELEMCARD, IDXCARD) in secondCarObj" class="card" style="width: 18rem;">
+
+                        <img :src="ELEMCARD.imgpath" class="card-img-top" :alt="ELEMCARD.title">
+
+                        <div class="card-body">
+                            <div class="debug flex flex-dir-row just-cont-between mb-3">
+                                <div class="debug">
+                                    <h5 class="card-title">
+                                        {{ ELEMCARD.title }}
+                                    </h5>
+                                    <span>
+                                        {{ ELEMCARD.teacher }}
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <span class="badge rounded-pill text-bg-primary debug" style="display: inline-block;">
+                                        &#36 {{ ELEMCARD.price }}
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <p class="card-text">
+                                {{ ELEMCARD.content }}
+                            </p>
+
+                            <div class="debug flex flex-dir-row just-cont-evenly">
+                                <div class="debug">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>
+                                        {{ ELEMCARD.students }}
+                                    </span>
+                                </div>
+
+                                <div class="debug">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span class="text-uppercase">
+                                        {{ ELEMCARD.type }}
+                                    </span>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- end: card -->
+
+
+                </div>
+                <!-- end: div with 3 cards -->
+
+                <div class="debug width-20 flex flex-dir-row just-cont-evenly">
+                    <i v-for="(elem, index) in daticarousel" class="fa-solid"
+                        v-bind:class="[index == curractive ? 'fa-circle-dot' : 'fa-circle']"
+                        @click="updateCurrActive(index)"></i>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end: carousel popular courses -->
 
 
         <!-- start: client logos -->
@@ -135,7 +218,7 @@
 <script>
 export default {
     name: 'MainComp',
-    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos'],
+    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos', 'secondCarObj'],
     data() {
         return {
             curractive: this.currActiveCar,
