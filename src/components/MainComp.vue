@@ -84,7 +84,7 @@
         <!-- end: third div -->
 
         <!-- start: div with carousel -->
-        <div class="debug mb-3 bg-image-carousel flex align-it-center" style="min-height: 500px;">
+        <div class="debug bg-image-carousel flex align-it-center" style="min-height: 500px;">
             <div class="debug default-div flex flex-dir-col align-it-center just-cont-center">
 
                 <div class="debug mb-3">
@@ -114,8 +114,44 @@
         </div>
         <!-- end: div with carousel -->
 
+        <!-- start: learning possibilities -->
+        <div class="debug">
+
+            <div class="debug default-div flex flex-dir-row just-cont-evenly">
+                <div class="debug width-30">
+                    <ul class="list-group">
+                        <li v-for="idxlist in 5" class="list-group-item font-size-25"
+                            v-bind:class="[idxlist == curractiveList ? 'class-li' : '']" @click="updateActiveLi(idxlist)">
+                            An item
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="debug width-60 padd-5">
+                    <h2 class="text-bold mb-3 font-size-40">
+                        Learning Possibilities
+                    </h2>
+
+                    <p class="font-size-20" style="color: #959595;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam voluptates nulla, hic id,
+                        ipsa eum commodi blanditiis repellat, eligendi nesciunt recusandae natus ad voluptatem ex adipisci
+                        nobis corrupti obcaecati.
+                    </p>
+
+                    <ul class="user-list-ticks">
+                        <li v-for="idxlist2 in 5">
+                            chicco
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end: learning possibilities -->
+
         <!-- start: carousel popular courses -->
-        <div class="debug mb-3 flex align-it-center" style="min-height: 500px;">
+        <div class="debug mb-3 flex align-it-center bg-pattern" style="min-height: 500px;">
 
             <div class="debug default-div flex flex-dir-col align-it-center just-cont-center">
 
@@ -236,7 +272,8 @@ export default {
         return {
             curractive: this.currActiveCar,
             daticarousel: this.carouselInfo,
-            curractivesec: this.currActiveSecond
+            curractivesec: this.currActiveSecond,
+            curractiveList: 1
         }
     },
     methods: {
@@ -249,7 +286,12 @@ export default {
         updateCurrActiveSecond(IDXCARDI) {
             if (IDXCARDI != this.curractivesec) {
                 this.curractivesec = IDXCARDI
-                console.log(this.curractivesec)
+            }
+        },
+
+        updateActiveLi(idxlist) {
+            if (idxlist != this.curractiveList) {
+                this.curractiveList = idxlist
             }
         }
     }
@@ -257,6 +299,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.user-list-ticks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li:before {
+        content: '✓';
+        color: #40C4FF;
+    }
+
+}
+
+.class-li {
+    color: #40C4FF;
+    border-left: 10px solid #40C4FF;
+    font-weight: bold;
+}
+
 .bg-image {
     background-image: url(../assets/h1-img-8.jpg);
     background-repeat: no-repeat;
@@ -266,6 +326,13 @@ export default {
 
 .bg-image-carousel {
     background-image: url(../assets/h5-parallax-img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-pattern {
+    background-image: url(../assets/background-pattern.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
