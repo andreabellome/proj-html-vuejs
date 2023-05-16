@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <HeaderComp :datiHeader="store.headerObj" />
+  <HeaderComp :datiHeader="store.headerObj" :datiCarousel="store.carouselObj" :currActive="store.currActive" />
   <MainComp />
   <FooterComp :datiFooter="store.footerObj" />
 </template>

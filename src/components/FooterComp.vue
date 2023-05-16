@@ -1,5 +1,5 @@
 <template>
-    <div class="debug container-footer">
+    <div class="container-footer">
 
         <!-- start: top part footer -->
         <div class="footer-style" style="border-bottom: 1px solid #B9B9B9 ">

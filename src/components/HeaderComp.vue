@@ -1,14 +1,14 @@
 <template>
-    <div class="debug padd-10 bg-header" style="min-height: 600px;">
+    <div class="padd-10 bg-header" style="min-height: 650px;">
 
         <!-- start: header -->
-        <div class="debug header-style padd-10 width-75 margin-auto">
+        <div class="header-style padd-10 width-75 margin-auto">
 
             <!-- nav bar -->
             <NavBarComp :datiNav="datiHeader" />
 
             <!-- carousel -->
-            <CarouselComp />
+            <CarouselComp :datiCarouselComp="datiCarousel" :currentActive="currActive" />
 
         </div>
         <!-- end: header -->
@@ -24,7 +24,7 @@ import CarouselComp from './CarouselComp.vue';
 
 export default {
     name: 'HeaderComp',
-    props: ['datiHeader'],
+    props: ['datiHeader', 'datiCarousel', 'currActive'],
     components: {
         NavBarComp,
         CarouselComp

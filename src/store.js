@@ -14,6 +14,25 @@ export const store = reactive(
         ],
         /* end: object with header info */
 
+        /* start: carousel info */
+        currActive: 1,
+
+        carouselObj: [
+            {
+                title: 'Contemporary Ideas',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+            },
+            {
+                title: 'Title Second Slide',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+            },
+            {
+                title: 'Title Third Slide',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
+            }
+        ],
+        /* end: carousel info */
+
         /* start: object with footer info */
         footerObj: [
             {
