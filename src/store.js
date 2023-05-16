@@ -19,11 +19,11 @@ export const store = reactive(
 
         carouselObj: [
             {
-                title: 'Contemporary Ideas',
+                title: 'Title Second Slide',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
             },
             {
-                title: 'Title Second Slide',
+                title: 'Contemporary Ideas',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error exercitationem, temporibus earum minus delectus totam reiciendis voluptate sunt cum blanditiis porro sit.Quam ullam repudiandae, laudantium officiis maiores amet illum?',
             },
             {

@@ -14,7 +14,7 @@
         </div>
 
         <!-- start: buttons to update slides -->
-        <div class="col-white width-30 flex flex-dir-row just-cont-evenly">
+        <div class="col-white width-20 flex flex-dir-row just-cont-evenly">
 
             <i v-for="(elem, index) in datiCarouselComp" class="fa-regular col-white"
                 v-bind:class="[index == curractive ? 'fa-circle-dot' : 'fa-circle']" @click="updateCurrActive(index)"></i>

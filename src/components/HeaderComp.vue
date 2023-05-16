@@ -1,8 +1,8 @@
 <template>
-    <div class="padd-10 bg-header" style="min-height: 650px;">
+    <div class="debug padd-10 bg-header" style="min-height: 650px;">
 
         <!-- start: header -->
-        <div class="header-style padd-10 width-75 margin-auto">
+        <div class="debug header-style padd-10 width-75 margin-auto">
 
             <!-- nav bar -->
             <NavBarComp :datiNav="datiHeader" />
@@ -12,8 +12,6 @@
 
         </div>
         <!-- end: header -->
-
-
 
     </div>
 </template>
