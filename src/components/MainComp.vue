@@ -2,7 +2,7 @@
     <div class="debug" style="padding-top: 10px; padding-bottom: 10px;">
 
         <!-- start: main container first div -->
-        <div class="debug default-div mb-3">
+        <div class="debug default-div mb-3 padd-10">
 
             <div class="flex flex-dir-row just-cont-evenly">
                 <div v-for="(elem, index) in datiFirstDiv" class="flex flex-dir-col align-it-center just-cont-center"
@@ -21,7 +21,7 @@
         <!-- end: main container first div -->
 
         <!-- start: second div The Trusted Name for In-Home Tutoring -->
-        <div class="debug default-div mb-3">
+        <div class="debug default-div mb-3 padd-10">
             <h2 class="text-bold mb-3 width-40 font-size-40">
                 The Trusted Name for In-Home Tutoring.
             </h2>
@@ -44,7 +44,7 @@
         <!-- end: second div The Trusted Name for In-Home Tutoring -->
 
         <!-- start: third div -->
-        <div class="debug default-div mb-3 flex flex-dir-row just-cont-between">
+        <div class="debug default-div mb-3 flex flex-dir-row just-cont-between padd-10">
             <div class="bg-image" style="width: 40%"></div>
 
             <div class="" style="width: 55%;">
@@ -115,7 +115,7 @@
         <!-- end: div with carousel -->
 
         <!-- start: learning possibilities -->
-        <div class="debug">
+        <div class="debug padd-10">
 
             <div class="debug default-div flex flex-dir-row just-cont-evenly">
                 <div class="debug width-30">
@@ -151,7 +151,7 @@
         <!-- end: learning possibilities -->
 
         <!-- start: carousel popular courses -->
-        <div class="debug mb-3 flex align-it-center bg-pattern" style="min-height: 500px;">
+        <div class="debug mb-3 flex align-it-center bg-pattern padd-10" style="min-height: 500px;">
 
             <div class="debug default-div flex flex-dir-col align-it-center just-cont-center">
 
