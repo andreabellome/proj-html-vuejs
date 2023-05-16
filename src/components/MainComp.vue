@@ -47,9 +47,9 @@
         <div class="debug default-div mb-3 flex flex-dir-row just-cont-between">
             <div class="bg-image" style="width: 40%"></div>
 
-            <div class="" style="width: 60%;">
+            <div class="" style="width: 55%;">
                 <h2 class="text-bold mb-3 font-size-40">
-                    Empowering Children to Reach Their Potential
+                    Empowering Children to Reach Their Potential.
                 </h2>
                 <p style="color: #959595;">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ratione vel distinctio nemo at
@@ -82,6 +82,12 @@
             </div>
         </div>
         <!-- end: third div -->
+
+        <!-- start: div with carousel -->
+        <div class="debug ">
+            carousel here
+        </div>
+        <!-- end: div with carousel -->
 
     </div>
 </template>
