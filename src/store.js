@@ -38,23 +38,23 @@ export const store = reactive(
                 imgpath: '../src/assets/h5-custom-icon-1.png'
             },
             {
-                title: 'Languages',
+                title: 'Software',
                 imgpath: '../src/assets/h5-custom-icon-2.png'
             },
             {
-                title: 'Languages',
+                title: 'Business',
                 imgpath: '../src/assets/h5-custom-icon-3.png'
             },
             {
-                title: 'Languages',
+                title: 'Chemistry',
                 imgpath: '../src/assets/h5-custom-icon-4.png'
             },
             {
-                title: 'Languages',
+                title: 'Science',
                 imgpath: '../src/assets/h5-custom-icon-5.png'
             },
             {
-                title: 'Languages',
+                title: 'DIY&Craft',
                 imgpath: '../src/assets/h5-custom-icon-6.png'
             },
 

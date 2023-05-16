@@ -20,22 +20,68 @@
         </div>
         <!-- end: main container first div -->
 
+        <!-- start: second div The Trusted Name for In-Home Tutoring -->
         <div class="debug default-div mb-3">
-            <h2 class="debug text-bold mb-3">
+            <h2 class="text-bold mb-3 width-40 font-size-40">
                 The Trusted Name for In-Home Tutoring.
             </h2>
 
-            <p class="debug" style="color: #959595;">
+            <p style="color: #959595;">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptates amet minus odio eveniet ipsum,
                 dolore porro! Expedita rerum consequuntur inventore amet obcaecati possimus pariatur? Aut perferendis sit
                 dolorem nesciunt?
             </p>
 
-            <span class="debug learn-more">
+            <p class="learn-more" style="display: inline-block;">
                 Learn more
-            </span>
+            </p>
+
+            <div class="width-70 margin-auto">
+                <img src="../assets/new-image.png" class="img-fluid">
+            </div>
 
         </div>
+        <!-- end: second div The Trusted Name for In-Home Tutoring -->
+
+        <!-- start: third div -->
+        <div class="debug default-div mb-3 flex flex-dir-row just-cont-between">
+            <div class="bg-image" style="width: 40%"></div>
+
+            <div class="" style="width: 60%;">
+                <h2 class="text-bold mb-3 font-size-40">
+                    Empowering Children to Reach Their Potential
+                </h2>
+                <p style="color: #959595;">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ratione vel distinctio nemo at
+                    exercitationem corrupti ullam animi voluptate earum repudiandae eum mollitia quidem harum adipisci non.
+                    Quaerat, nihil dolorum!
+                </p>
+
+                <div class="flex flex-dir-row just-cont-evenly">
+
+                    <div class="text-center">
+                        <span class="text-bold font-size-40" style="color: #40C4FF;">
+                            168
+                        </span> <br>
+                        <span class="text-bold font-size-20" style="color: #40C4FF;">
+                            Used stories
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <span class="text-bold font-size-40" style="color: #40C4FF;">
+                            347
+                        </span> <br>
+                        <span class="text-bold font-size-20" style="color: #40C4FF;">
+                            Events
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end: third div -->
 
     </div>
 </template>
@@ -52,6 +98,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bg-image {
+    background-image: url(../assets/h1-img-8.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 .default-div {
     padding: 10px;
     width: 75%;

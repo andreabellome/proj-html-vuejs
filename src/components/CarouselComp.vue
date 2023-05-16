@@ -39,7 +39,6 @@ export default {
         updateCurrActive(index) {
 
             if (index != this.curractive) {
-                let lcarousel = this.daticarousel.length
                 this.curractive = index
             }
 
