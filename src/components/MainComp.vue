@@ -117,7 +117,7 @@
         <!-- start: learning possibilities -->
         <div class="debug padd-10">
 
-            <div class="debug default-div flex flex-dir-row just-cont-evenly">
+            <div class="debug default-div flex flex-dir-row just-cont-evenly align-it-center">
                 <div class="debug width-30">
                     <ul class="list-group">
                         <li v-for="idxlist in 5" class="list-group-item font-size-25"
