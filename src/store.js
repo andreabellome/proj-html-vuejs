@@ -107,6 +107,7 @@ export const store = reactive(
         ],
 
         currActiveSecondCarMain: 1,
+        cardsPerRow: 3,
 
         carouselSecondObjMain: [
 
@@ -154,7 +155,7 @@ export const store = reactive(
                 title: 'Web Designing',
                 teacher: 'Giovanni Francesco',
                 content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-                type: 'programming',
+                type: 'business',
                 students: '20',
                 price: 'FREE',
                 imgpath: '../src/assets/course-5-f-img.jpg'
@@ -163,7 +164,7 @@ export const store = reactive(
                 title: 'Financial Modelling',
                 teacher: 'Elena Ciao',
                 content: 'Some quick example text to build on the card title and make up the bulk of the cards content.',
-                type: 'programming',
+                type: 'general',
                 students: '3',
                 price: '20',
                 imgpath: '../src/assets/course-6-f-img.jpg'

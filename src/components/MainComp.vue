@@ -200,7 +200,7 @@
                 <!-- end: div with 3 cards -->
 
                 <div class="debug width-20 flex flex-dir-row just-cont-evenly">
-                    <i v-for="IDXCARDI in secondCarObj.length / 3" class="fa-solid"
+                    <i v-for="IDXCARDI in secondCarObj.length / ncardsrow" class="fa-solid"
                         v-bind:class="[IDXCARDI - 1 == curractivesec ? 'fa-circle-dot' : 'fa-circle']"
                         @click="updateCurrActiveSecond(IDXCARDI - 1)">
                     </i>
@@ -231,7 +231,7 @@
 <script>
 export default {
     name: 'MainComp',
-    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos', 'secondCarObj', 'currActiveSecond'],
+    props: ['datiFirstDiv', 'carouselInfo', 'currActiveCar', 'clientLogos', 'secondCarObj', 'currActiveSecond', 'ncardsrow'],
     data() {
         return {
             curractive: this.currActiveCar,
