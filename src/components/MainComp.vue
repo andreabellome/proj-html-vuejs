@@ -203,7 +203,6 @@
                     <i v-for="IDXCARDI in secondCarObj.length / 3" class="fa-solid"
                         v-bind:class="[IDXCARDI - 1 == curractivesec ? 'fa-circle-dot' : 'fa-circle']"
                         @click="updateCurrActiveSecond(IDXCARDI - 1)">
-                        {{ IDXCARDI - 1 }}
                     </i>
                 </div>
 
@@ -214,8 +213,8 @@
 
 
         <!-- start: client logos -->
-        <div class="debug">
-            <div class="debug default-div flex flex-dir-row just-cont-evenly align-it-center">
+        <div class="">
+            <div class="default-div flex flex-dir-row just-cont-evenly align-it-center">
 
                 <div v-for="(elemlogo, idxlogo) in clientLogos" class="">
                     <img :src="elemlogo.imgpath" :alt="elemlogo.imgpath">
